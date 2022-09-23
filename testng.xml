@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="email" value="kal2@test.com"/>
+    <parameter name="wrongEmail" value="kal22@test.com"/>
+    <parameter name="password" value="123456"/>
+    <parameter name="wrongPassword" value="1234567"/>
+
+    <parameter name="regEmail" value="someRandomEmail@test.com"/>
+    <parameter name="regUsername" value="randomUser"/>
+    <parameter name="regPassword" value="123456"/>
+    <test verbose="2" preserve-order="true" name="C:/Users/user/Desktop/WORK/Java/InteliJava/Betting-react-app">
+        <classes>
+            <class name="LoginTests.LoginTests">
+                <methods>
+                    <include name="tryToLoginWithInvalidCredentials" />
+                </methods>
+            </class>
+<!--            <class name="RegistrationTests.RegistrationTests">-->
+<!--            <methods>-->
+<!--                <include name="registerNewUser" />-->
+<!--            </methods>-->
+<!--        </class>-->
+<!--            <class name="HomePageTests.HomeTests">-->
+<!--                <methods>-->
+<!--                    <include name="scrollAndAddEventToBetSlip" />-->
+<!--                </methods>-->
+<!--            </class>-->
+
+        </classes>
+    </test>
+</suite>
